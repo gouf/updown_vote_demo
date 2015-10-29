@@ -1,2 +1,14 @@
-h1 Articles#index
-  p Find me in app/views/articles/index.html.slim
+.container
+  .row
+    h1 Articles#index
+    p Find me in app/views/articles/index.html.slim
+  .row
+    table.table.table-striped
+      tr
+        th Title
+        th Vote
+      - @articles.each do |article|
+        tr
+          td = article.title
+          td
+            = article.vote
