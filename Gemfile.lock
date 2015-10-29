@@ -153,7 +153,6 @@ GEM
     nprogress-rails (0.1.6.7)
     parser (2.2.3.0)
       ast (>= 1.1, < 3.0)
-    pg (0.18.3)
     powerpack (0.1.1)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -265,6 +264,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    sqlite3 (1.3.11)
     squasher (0.1.5)
     temple (0.7.6)
     therubyracer (0.12.2)
@@ -321,7 +321,6 @@ DEPENDENCIES
   launchy
   less-rails
   nprogress-rails
-  pg
   pry-byebug
   pry-coolline
   pry-rails
@@ -336,6 +335,7 @@ DEPENDENCIES
   selenium-webdriver
   slim-rails
   spring
+  sqlite3
   squasher
   therubyracer
   timecop
