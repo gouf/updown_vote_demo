@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
   end
 
   def down_vote
-    @article.up_vote!
+    @article.down_vote!
   end
 
   private
