@@ -1,0 +1,18 @@
+.container
+  .row
+    h1 Articles#index
+    p Find me in app/views/articles/index.html.slim
+  .row
+    table.table.table-striped
+      tr
+        th Title
+        th Vote
+      - @articles.each do |article|
+        tr
+          td = article.title
+          td
+            = article.vote
+          td
+            .btn-group
+              = link_to 'up', up_vote_path(article), class: %w(btn btn-sm btn-success)
+              = link_to 'down', down_vote_path(article), class: %w(btn btn-sm btn-danger)
