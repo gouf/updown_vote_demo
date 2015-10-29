@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Article.destroy_all
+10.times.each do |i|
+  Article.create(title: "title#{i}", vote: 0)
+end
